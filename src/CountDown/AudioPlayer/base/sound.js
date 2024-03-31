@@ -227,7 +227,6 @@ const HMM4 = [
     src: '/CountDown2/audio/HMM4/BattleVI.mp3',
   },
 ]
-const re = []
 const sounds = { DRADGE, HMM4 }
 
 export default sounds

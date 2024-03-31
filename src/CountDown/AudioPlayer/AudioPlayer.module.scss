@@ -84,15 +84,21 @@
           top: 50%;
           right: 7%;
           transform: translateY(-50%);
+          background-color: rgba(0, 0, 0, 0.4);
+          border-radius: 25px;
         }
         .buttonPlay3 {
           color: #5fc135;
           font-size: 35px;
           border-radius: 50%;
-          padding: 5px;
+          padding: 2px;
+          &:hover {
+            color: #e6ffdc;
+          }
         }
         .buttonActive {
-          background-color: rgba(0, 0, 0, 0.4);
+          color: #00eaff;
+          // background-color: rgba(0, 0, 0, 0.4);
         }
       }
       .button {
