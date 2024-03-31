@@ -1,0 +1,42 @@
+.value {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 7%;
+  // width: auto;
+  // min-width: min(40%, 150px);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 20px 5px 5px;
+  color: #00ff5583;
+  z-index: 10;
+  border-radius: 25px;
+
+  .valueSlider {
+    width: 100px;
+    // transition: all 1s ease;
+    // opacity: 0;
+    // transition: opacity 1s ease;
+
+    // pointer-events: none;
+  }
+
+  // .buttonShow:hover + .valueSlider,
+  // .valueSlider:hover {
+  //   width: 150px;
+  //   opacity: 1;
+  // }
+
+  // .buttonShow:hover + .valueSlider {
+  //   width: 150px;
+  //   opacity: 1;
+  //   // pointer-events: auto;
+  // }
+  // .valueSlider:hover {
+  //   width: 150px;
+  //   opacity: 1;
+  //   // pointer-events: auto;
+  // }
+  .valueSlider {
+    color: #7dff4586;
+  }
+}

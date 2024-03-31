@@ -1,0 +1,113 @@
+.containerCountDown {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .countDown {
+    max-width: 80vw;
+    height: auto;
+    position: relative;
+    img {
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      // left: 50%;
+      // bottom: -25%;
+      // transform: translateX(-50%);
+      top: 0;
+      left: 0;
+    }
+    .close {
+      font-size: min(6vw, 40px);
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+    }
+    .titleOption {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      label {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+    }
+    input {
+      background-color: rgba(107, 62, 230, 0.708);
+      color: white;
+      border-radius: 5px;
+      // padding-left: 5px;
+      text-align: center;
+      padding: 10px 0;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+      }
+    }
+
+    label,
+    input {
+      font-size: 25px;
+      margin-right: 10px;
+    }
+    .optionTime {
+      display: flex;
+      input {
+        width: 50px;
+      }
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      background-color: rgba(107, 62, 230, 0.708);
+      color: white;
+      font-size: 25px;
+      box-shadow: 0 5px 0 rgb(15, 0, 112);
+      color: rgb(191, 233, 183);
+
+      &:hover {
+        cursor: pointer;
+        transform: translateY(5px);
+        box-shadow: none;
+      }
+    }
+    h1 {
+      display: flex;
+      justify-content: center;
+      font-size: 5vw;
+      min-width: 100%;
+    }
+    .timerFull {
+      display: flex;
+      justify-content: space-between;
+      div {
+        display: flex;
+        flex-direction: column;
+        padding-right: min(30px, 2vw);
+        span:first-child {
+          align-self: center;
+          font-size: 10vw;
+        }
+        span:last-child {
+          align-self: center;
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+  .containerPlayer {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    position: fixed;
+
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
