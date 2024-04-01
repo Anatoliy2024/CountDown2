@@ -151,6 +151,7 @@ const AudioPlayer = ({ setIsAudioPlayer }) => {
               </IconButton>
               <div
                 className={style.buttonOther}
+                // onClick={() => setIsButtonOther(!isbuttonOther)}
                 onMouseEnter={() => setIsButtonOther(true)}
                 onMouseLeave={() => setIsButtonOther(false)}
               >
