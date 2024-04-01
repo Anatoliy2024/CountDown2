@@ -1,7 +1,6 @@
 import style from './CountDown.module.scss'
 import { useState, useEffect } from 'react'
 import AudioPlayer from './AudioPlayer/AudioPlayer'
-// import { Opacity } from '@mui/icons-material'
 
 export function CountDown() {
   const [audio] = useState(new Audio('/CountDown2/timer.mp3'))

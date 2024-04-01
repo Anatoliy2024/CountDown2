@@ -45,7 +45,14 @@
         line-height: 1.1;
         padding-bottom: 1.5em;
         span:first-child {
-          font-size: 4em;
+          font-size: 2.5em;
+          // height: 10%;
+          width: max(35vw, 300px);
+
+          white-space: nowrap; /* Запрещаем перенос текста */
+          overflow: hidden; /* Скрываем текст, который выходит за пределы элемента */
+          text-overflow: ellipsis; /* Отображаем многоточие для текста, который выходит за пределы элемента */
+          // border: 1px solid black;
         }
         span:last-child {
           font-size: 1.5em;
@@ -73,7 +80,22 @@
         display: flex;
         justify-content: center;
         position: relative;
-
+        .containerPlayList {
+          // position: relative;
+          .playList {
+            position: absolute;
+            top: -72px;
+            left: -30px;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+            border-radius: 5px;
+            ul {
+              padding: 5px;
+              margin: 0;
+              list-style-type: none;
+            }
+          }
+        }
         .boxButton {
           &:focus {
             outline: none;
@@ -84,7 +106,7 @@
           top: 50%;
           right: 7%;
           transform: translateY(-50%);
-          background-color: rgba(0, 0, 0, 0.4);
+          background-color: rgba(0, 0, 0, 0.75);
           border-radius: 25px;
         }
         .buttonPlay3 {
@@ -97,7 +119,8 @@
           }
         }
         .buttonActive {
-          color: #00eaff;
+          color: rgb(2, 255, 145);
+          border: 1px solid rgb(2, 255, 145);
           // background-color: rgba(0, 0, 0, 0.4);
         }
       }
