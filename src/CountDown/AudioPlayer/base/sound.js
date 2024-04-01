@@ -99,6 +99,46 @@ const DRADGE = [
     melody: 'The Winnowed Town',
     src: '/CountDown2/audio/DREDGE/TheWinnowedTown.mp3',
   },
+  {
+    artist: 'Dredge',
+    melody: 'Her Theme (Lucid)',
+    src: '/CountDown2/audio/DREDGE/Her Theme (Lucid).mp3',
+  },
+  {
+    artist: 'Dredge',
+    melody: 'Main Theme (Lucid)',
+    src: '/CountDown2/audio/DREDGE/Main Theme (Lucid).mp3',
+  },
+  {
+    artist: 'Dredge',
+    melody: 'The Brave Traveller',
+    src: '/CountDown2/audio/DREDGE/The Brave Traveller.mp3',
+  },
+  {
+    artist: 'Dredge',
+    melody: 'The Cautious Traveller',
+    src: '/CountDown2/audio/DREDGE/The Cautious Traveller.mp3',
+  },
+  {
+    artist: 'Dredge',
+    melody: 'Trailer 1 (Bonus Track)',
+    src: '/CountDown2/audio/DREDGE/Trailer 1 (Bonus Track).mp3',
+  },
+  {
+    artist: 'Dredge',
+    melody: 'The Broken',
+    src: '/CountDown2/audio/DREDGE/The Broken.mp3',
+  },
+  {
+    artist: 'Dredge',
+    melody: 'The Bulwark',
+    src: '/CountDown2/audio/DREDGE/The Bulwark.mp3',
+  },
+  {
+    artist: 'Dredge',
+    melody: 'The Exotic Traveller',
+    src: '/CountDown2/audio/DREDGE/The Exotic Traveller.mp3',
+  },
 ]
 const HMM4 = [
   {
@@ -227,6 +267,58 @@ const HMM4 = [
     src: '/CountDown2/audio/HMM4/BattleVI.mp3',
   },
 ]
-const sounds = { DRADGE, HMM4 }
+const FishingSong = [
+  {
+    artist: 'FishingSong',
+    melody: 'Devil_s Spine Ambience (Day)',
+    src: '/CountDown2/audio/FishingSong/Devil_s Spine Ambience (Day).mp3',
+  },
+  {
+    artist: 'FishingSong',
+    melody: 'Devil_s Spine Ambience (Night)',
+    src: '/CountDown2/audio/FishingSong/Devil_s Spine Ambience (Night).mp3',
+  },
+  {
+    artist: 'FishingSong',
+    melody: 'Gale Cliffs Ambience (Day)',
+    src: '/CountDown2/audio/FishingSong/Gale Cliffs Ambience (Day).mp3',
+  },
+  {
+    artist: 'FishingSong',
+    melody: 'Gale Cliffs Ambience (Night)',
+    src: '/CountDown2/audio/FishingSong/Gale Cliffs Ambience (Night).mp3',
+  },
+  {
+    artist: 'FishingSong',
+    melody: 'Stellar Basin Ambience (Day)',
+    src: '/CountDown2/audio/FishingSong/Stellar Basin Ambience (Day).mp3',
+  },
+  {
+    artist: 'FishingSong',
+    melody: 'Stellar Basin Ambience (Night)',
+    src: '/CountDown2/audio/FishingSong/Stellar Basin Ambience (Night).mp3',
+  },
+  {
+    artist: 'FishingSong',
+    melody: 'The Marrows Ambience (Day)',
+    src: '/CountDown2/audio/FishingSong/The Marrows Ambience (Day).mp3',
+  },
+  {
+    artist: 'FishingSong',
+    melody: 'The Marrows Ambience (Night)',
+    src: '/CountDown2/audio/FishingSong/The Marrows Ambience (Night).mp3',
+  },
+  {
+    artist: 'FishingSong',
+    melody: 'Twisted Strand Ambience (Day)',
+    src: '/CountDown2/audio/FishingSong/Twisted Strand Ambience (Day).mp3',
+  },
+  {
+    artist: 'FishingSong',
+    melody: 'Twisted Strand Ambience (Night)',
+    src: '/CountDown2/audio/FishingSong/Twisted Strand Ambience (Night).mp3',
+  },
+]
+const sounds = { DRADGE, HMM4, FishingSong }
 
 export default sounds

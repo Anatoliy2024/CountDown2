@@ -51,10 +51,7 @@ const AudioPlayer = ({ setIsAudioPlayer }) => {
     } else {
       setIndexMusic(indexMusic)
       audio.src = soundsList[indexMusic].src
-      console.log('object')
     }
-
-    console.log(indexMusic)
   }, [soundList])
 
   const playMusicAuto = (index) => {
@@ -188,12 +185,19 @@ const AudioPlayer = ({ setIsAudioPlayer }) => {
                         }
                       />
                       {isPlayList && (
-                        <div className={style.playList}>
+                        <div
+                          className={style.playList}
+                          style={{
+                            top: `${-30 * Object.keys(sounds).length - 10}px`,
+                          }}
+                        >
                           <ul>
                             {Object.keys(sounds).map((el) => (
                               <li
                                 onClick={() => {
                                   setSoundList(el)
+                                  setIsButtonOther(false)
+                                  setIsPlayList(false)
                                 }}
                               >
                                 {el}

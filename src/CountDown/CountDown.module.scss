@@ -69,11 +69,11 @@
       font-size: 25px;
       box-shadow: 0 5px 0 rgb(15, 0, 112);
       color: rgb(191, 233, 183);
-
+      transition: all 0.3s ease;
       &:hover {
         cursor: pointer;
-        transform: translateY(5px);
-        box-shadow: none;
+        transform: translateY(3px);
+        box-shadow: 0 2px 0 rgb(15, 0, 112);
       }
     }
     h1 {
