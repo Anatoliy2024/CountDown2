@@ -22,7 +22,7 @@ const AudioPlayer = ({ setIsAudioPlayer }) => {
 
   const soundsList = sounds[soundList]
 
-  const { src, artist, melody } = soundsList[indexMusic]
+  const { src, artist, melody, img } = soundsList[indexMusic]
   const [audio] = useState(new Audio(src))
   const randomMusic = () => {
     setIsRandomMusic(!isRandomMusic)
@@ -126,7 +126,7 @@ const AudioPlayer = ({ setIsAudioPlayer }) => {
             <span>{melody}</span>
           </div>
 
-          <img className={style.img} src='https://picsum.photos/200' alt='' />
+          <img className={style.img} src={img} alt='' />
           <SlideLine audio={audio} handleNext={handleNext} />
 
           <div className={style.buttonAndValue}>
