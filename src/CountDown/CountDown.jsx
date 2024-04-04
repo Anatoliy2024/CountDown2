@@ -33,6 +33,7 @@ export function CountDown() {
   const [isAudioPlayer, setIsAudioPlayer] = useState(false)
 
   const [isStart, setIsStart] = useState(false)
+
   const calculatedFinish = (days = 0, hours = 0, minutes = 0, seconds = 0) => {
     if (seconds > 59) {
       seconds = 60
@@ -120,7 +121,6 @@ export function CountDown() {
 
   const startTimer = () => {
     let { days, hours, minutes, seconds } = newGoal
-
     if (title.length > 0) {
       if (!days || !hours || !minutes || !seconds) {
         setNewGoal(() => {
@@ -233,6 +233,7 @@ export function CountDown() {
             src='/CountDown2/iconPlay.png'
             alt=''
           />
+
           <div className={style.timerFull}>
             <div>
               <span>{newGoal.days}</span>

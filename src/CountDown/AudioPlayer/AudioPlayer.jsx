@@ -8,6 +8,7 @@ import MenuIcon from '@material-ui/icons/Menu'
 import SettingsApplicationsIcon from '@material-ui/icons/SettingsApplications'
 
 import sounds from './base/sound.js'
+import imgSoundList from './base/imgSoundList.js'
 
 import style from './AudioPlayer.module.scss'
 
@@ -19,10 +20,11 @@ const AudioPlayer = ({ setIsAudioPlayer }) => {
   const [soundList, setSoundList] = useState('DRADGE')
   const [indexMusic, setIndexMusic] = useState(0)
   const [arrayRandomNumber, setArrayRandomNumber] = useState(null)
+  const [imgSound, setImgSound] = useState(imgSoundList[soundList])
 
   const soundsList = sounds[soundList]
 
-  const { src, artist, melody, img } = soundsList[indexMusic]
+  const { src, artist, melody } = soundsList[indexMusic]
   const [audio] = useState(new Audio(src))
   const randomMusic = () => {
     setIsRandomMusic(!isRandomMusic)
@@ -126,7 +128,7 @@ const AudioPlayer = ({ setIsAudioPlayer }) => {
             <span>{melody}</span>
           </div>
 
-          <img className={style.img} src={img} alt='' />
+          <img className={style.img} src={imgSound} alt='' />
           <SlideLine audio={audio} handleNext={handleNext} />
 
           <div className={style.buttonAndValue}>
@@ -195,6 +197,7 @@ const AudioPlayer = ({ setIsAudioPlayer }) => {
                             {Object.keys(sounds).map((el) => (
                               <li
                                 onClick={() => {
+                                  setImgSound(imgSoundList[el])
                                   setSoundList(el)
                                   setIsButtonOther(false)
                                   setIsPlayList(false)
